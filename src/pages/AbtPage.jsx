@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaCode, FaLaptopCode, FaLightbulb } from 'react-icons/fa6'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 
 function Abtpage() {

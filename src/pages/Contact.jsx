@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaInstagram
 } from 'react-icons/fa6'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar'
 import emailjs from '@emailjs/browser'
 
 function Contact() {

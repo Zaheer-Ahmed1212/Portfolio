@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaGithub, FaArrowUpRightFromSquare } from 'react-icons/fa6'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 import weatherpr from '../assets/weatherpr.jpg'
 import perfume from '../assets/perfpr.jpg'
