@@ -2,7 +2,7 @@ import React from 'react'
 import weatherpr from '../assets/weatherpr.jpg'
 import perfume from '../assets/perfpr.jpg'
 import landingpage from '../assets/landing.jpg'
-import currency from '../assets/currpr.jpg'
+import fastfood from '../assets/fastfood.jpg'
 
 function Projects() {
   const projects = [
@@ -14,19 +14,19 @@ function Projects() {
       img:perfume
     },
     {
-         title: 'Currency Converter',
+         title: 'Fastfood Landing page',
           description:
-            'A simple and interactive currency converter fetches current currency rate and present in simple and user friendly way',
-          technologies: ['React', 'JavaScript', 'Tailwind CSS'],
-          link:"https://currency-convertor-delta-six.vercel.app/",
-          img:currency,
+          'A modern, responsive fast-food website built with React, Tailwind CSS, and GSAP, featuring an interactive menu and smooth animations.',
+          technologies: 'React• TailwindCSS • GSAP',
+          link:"https://fastfood-self.vercel.app/",
+          img:fastfood,
       
     },
     {
           title: 'Landing Page',
           description:
             'A modern responsive landing page focused on clean design, attractive layouts, and a smooth user experience.',
-          technologies: ['HTML', 'Tailwind CSS', 'JavaScript'],
+          technologies: 'React • JavaScript • Tailwind CSS',
           link:"https://ecommerceweb.zaheerjokhio312.workers.dev/",
           img:landingpage,
     }

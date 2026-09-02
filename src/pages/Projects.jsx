@@ -8,6 +8,7 @@ import todo from '../assets/todopr.jpg'
 import calculator from '../assets/calcpr.jpg'
 import currency from '../assets/currpr.jpg'
 import landingpage from '../assets/landing.jpg'
+import fastfood from '../assets/fastfood.jpg'
 
 function Projects() {
 
@@ -17,53 +18,55 @@ function Projects() {
       description:
         'A simple and interactive currency converter fetches current currency rate and present in simple and user friendly way',
       technologies: ['React', 'JavaScript', 'Tailwind CSS'],
-      link:"https://currency-convertor-delta-six.vercel.app/",
-      img:currency,
-      github:"https://github.com/Zaheer-Ahmed1212/Currency-convertor.git"
+      link: "https://currency-convertor-delta-six.vercel.app/",
+      img: currency,
+      github: "https://github.com/Zaheer-Ahmed1212/Currency-convertor.git"
     },
     {
-      title: 'Weather Application',
+
+
+      title: 'Fastfood Landing page',
       description:
-        'A responsive weather application that fetches weather data and presents it through a simple and user-friendly interface.',
-      technologies: ['JavaScript', 'API', 'CSS'],
-      link: "https://weather-app-psi-ten-95.vercel.app/",
-      img: weatherpr,
-      github:"https://github.com/Zaheer-Ahmed1212/Weather-app.git"
+        'A modern, responsive fast-food website built with React, Tailwind CSS, and GSAP, featuring an interactive menu and smooth animations.',
+      technologies: ['React', 'TailwindCSS' , 'GSAP'],
+      link: "https://fastfood-self.vercel.app/",
+      img: fastfood,
+      github: "https://github.com/Zaheer-Ahmed1212/Fastfood.git"
     },
     {
       title: 'Perfume Website',
       description: 'A responsive perfume website with product browsing, cart functionality, authentication, and a modern user interface.',
-      technologies: ['React • JavaScript • Tailwind CSS'],
+      technologies: ['React' , 'JavaScript' , 'Tailwind CSS'],
       link: "https://zaheerahmed.e-complex.edu.pk/index.html",
       img: perfume,
-      github:"https://github.com/Zaheer-Ahmed1212/my-perfume-project.git"
+      github: "https://github.com/Zaheer-Ahmed1212/my-perfume-project.git"
     },
     {
       title: 'To-Do Application',
       description:
         'A simple and interactive task management application where users can add, manage, and remove their daily tasks.',
       technologies: ['JavaScript', 'HTML', 'CSS'],
-      link:"https://to-do-app-mu-sooty.vercel.app/",
-      img:todo,
-         github:"https://github.com/Zaheer-Ahmed1212/To-do-app.git"
+      link: "https://to-do-app-mu-sooty.vercel.app/",
+      img: todo,
+      github: "https://github.com/Zaheer-Ahmed1212/To-do-app.git"
     },
     {
       title: 'Calculator',
       description:
         'A clean and responsive calculator application with basic arithmetic operations and an easy-to-use interface.',
       technologies: ['JavaScript', 'HTML', 'CSS'],
-      link:"https://calculator-sable-psi-15.vercel.app/",
-      img:calculator,
-         github:"https://github.com/Zaheer-Ahmed1212/calculator-project.git"
+      link: "https://calculator-sable-psi-15.vercel.app/",
+      img: calculator,
+      github: "https://github.com/Zaheer-Ahmed1212/calculator-project.git"
     },
     {
       title: 'Landing Page',
       description:
         'A modern responsive landing page focused on clean design, attractive layouts, and a smooth user experience.',
       technologies: ['HTML', 'Tailwind CSS', 'JavaScript'],
-      link:"https://ecommerceweb.zaheerjokhio312.workers.dev/",
-      img:landingpage,
-      github:"https://github.com/Zaheer-Ahmed1212/Ecommerce.git"
+      link: "https://ecommerceweb.zaheerjokhio312.workers.dev/",
+      img: landingpage,
+      github: "https://github.com/Zaheer-Ahmed1212/Ecommerce.git"
     },
   ]
 

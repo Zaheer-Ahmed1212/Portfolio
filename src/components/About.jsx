@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function About() {
   return (
-    <section className='text-white px-5 sm:px-8 lg:px-12 py-20'>
+    <section className='text-white  px-5 sm:px-8 lg:px-12 '>
 
       <div className='max-w-6xl mx-auto'>
 
