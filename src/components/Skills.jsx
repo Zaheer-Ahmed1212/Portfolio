@@ -3,60 +3,63 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub } from 'react-ico
 import { SiTailwindcss, SiVite } from 'react-icons/si'
 
 function Skills() {
-  const skills = [
-    { name: 'HTML5', icon: <FaHtml5 /> },
-    { name: 'CSS3', icon: <FaCss3Alt /> },
-    { name: 'JavaScript', icon: <FaJs /> },
-    { name: 'React', icon: <FaReact /> },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
-    { name: 'Git', icon: <FaGitAlt /> },
-    { name: 'GitHub', icon: <FaGithub /> },
-    { name: 'Vite', icon: <SiVite /> },
-  ]
+const skills = [
+{ name: 'HTML5', icon: <FaHtml5 /> },
+{ name: 'CSS3', icon: <FaCss3Alt /> },
+{ name: 'JavaScript', icon: <FaJs /> },
+{ name: 'React', icon: <FaReact /> },
+{ name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+{ name: 'Git', icon: <FaGitAlt /> },
+{ name: 'GitHub', icon: <FaGithub /> },
+{ name: 'Vite', icon: <SiVite /> }
+]
 
-  return (
-    <section className='text-white px-5 sm:px-8 lg:px-12 py-20'>
+return ( <section className='text-white px-5 sm:px-8 lg:px-12 py-20'>
 
-      <div className='max-w-6xl mx-auto'>
 
-        <div className='mb-10'>
-          <p className='text-blue-500 text-sm sm:text-base font-medium'>
-            MY SKILLS
-          </p>
+  <div className='max-w-6xl mx-auto'>
 
-          <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold mt-2'>
-            Technologies I <span className='text-blue-300'>Work With</span>
-          </h2>
+    <div className='mb-10'>
+      <p className='text-blue-400 text-sm sm:text-base font-medium tracking-wider'>
+        MY SKILLS
+      </p>
 
-          <p className='text-zinc-400 mt-4 max-w-2xl text-sm sm:text-base'>
-            I use modern frontend technologies to build responsive, fast, and
-            engaging web experiences.
+      <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold mt-2 tracking-tight'>
+        Technologies I <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300'>Work With</span>
+      </h2>
+
+      <p className='text-zinc-400 mt-4 max-w-2xl text-sm sm:text-base leading-relaxed'>
+        I use modern frontend technologies to create responsive websites,
+        interactive interfaces, and smooth digital experiences tailored
+        to different business and project needs.
+      </p>
+    </div>
+
+    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4'>
+
+      {skills.map((skill, index) => (
+        <div
+          key={index}
+          className='group border border-zinc-800 bg-zinc-950/50 backdrop-blur-sm rounded-xl p-5 flex flex-col items-center justify-center gap-3 hover:border-blue-500/50 hover:bg-blue-500/5 hover:-translate-y-1 shadow-lg shadow-black/10 transition duration-300'
+        >
+          <div className='text-3xl text-blue-300 group-hover:text-cyan-300 group-hover:scale-110 transition duration-300'>
+            {skill.icon}
+          </div>
+
+          <p className='text-sm sm:text-base text-zinc-300 group-hover:text-white transition duration-300'>
+            {skill.name}
           </p>
         </div>
+      ))}
 
-        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4'>
+    </div>
 
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className='border border-zinc-700 rounded-xl p-5 flex flex-col items-center justify-center gap-3 hover:border-blue-500 transition'
-            >
-              <div className='text-3xl text-blue-300'>
-                {skill.icon}
-              </div>
+  </div>
 
-              <p className='text-sm sm:text-base'>
-                {skill.name}
-              </p>
-            </div>
-          ))}
+</section>
 
-        </div>
 
-      </div>
-
-    </section>
-  )
+)
 }
 
 export default Skills
