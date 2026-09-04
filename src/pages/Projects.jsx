@@ -5,7 +5,7 @@ import perfume from '../assets/perfpr.jpg'
 import weather from '../assets/weatherpr.jpg'
 import calculator from '../assets/calcpr.jpg'
 import currency from '../assets/currpr.jpg'
-import landingpage from '../assets/landing.jpg'
+import dental from '../assets/dental.jpg'
 import fastfood from '../assets/fastfood.jpg'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -62,13 +62,13 @@ function Projects() {
       github: 'https://github.com/Zaheer-Ahmed1212/calculator-project.git'
     },
     {
-      title: 'Business Landing Page',
+      title: 'Dental Clinic Webpage',
       description:
-        'A modern landing page created to present a business professionally with a clean visual layout, responsive design, and a focused user experience.',
-      technologies: ['HTML', 'Tailwind CSS', 'JavaScript'],
-      link: 'https://ecommerceweb.zaheerjokhio312.workers.dev/',
-      img: landingpage,
-      github: 'https://github.com/Zaheer-Ahmed1212/Ecommerce.git'
+        'A modern and responsive dental clinic website designed with a clean, premium aesthetic. Built with React, Tailwind CSS, and GSAP.',
+      technologies: ['REACT', 'Tailwind CSS', 'GSAP'],
+      link: 'https://dental-clinic-bt1p.vercel.app/',
+      img: dental,
+      github: 'https://github.com/Zaheer-Ahmed1212/dental-clinic.git'
     }
   ]
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import weatherpr from '../assets/weatherpr.jpg'
 import perfume from '../assets/perfpr.jpg'
-import landingpage from '../assets/landing.jpg'
+import dental from '../assets/dental.jpg'
 import fastfood from '../assets/fastfood.jpg'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -31,11 +31,11 @@ function Projects() {
       img: fastfood
     },
     {
-      title: 'Business Landing Page',
-      description: 'A clean and responsive landing page focused on presenting a business professionally, with an attractive layout and a smooth user experience across devices.',
-      technologies: 'React • JavaScript • Tailwind CSS',
-      link: 'https://ecommerceweb.zaheerjokhio312.workers.dev/',
-      img: landingpage
+      title: 'Dental Clinic Webpage',
+      description: 'A modern and responsive dental clinic website designed with a clean, premium aesthetic. Built with React, Tailwind CSS, and GSAP, featuring smooth animations, treatment sections, testimonials, before-and-after cases, and an appointment booking interface.',
+      technologies: 'React • GSAP • Tailwind CSS',
+      link: 'https://dental-clinic-bt1p.vercel.app/',
+      img: dental
     }
   ]
 
