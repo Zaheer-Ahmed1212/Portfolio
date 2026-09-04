@@ -1,13 +1,29 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FiMenu, FiX } from "react-icons/fi"
 import { NavLink } from 'react-router-dom'
+import gsap from 'gsap'
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
+  useEffect(() => {
+    gsap.fromTo(
+      '.navbar',
+      {
+        opacity: 0,
+        y: -30
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        ease: 'power3.out'
+      }
+    )
+  }, [])
+
   return (
     <div className='navbar fixed top-0 left-0 right-0 z-50 text-white flex justify-between items-center px-6 md:px-12 py-4 bg-zinc-950/75 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/10'>
-
       <div className="logo">
         <h2 className='text-[6vw] md:text-[3vw] lg:text-[2.2vw] font-semibold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300'>
           Zaheer Ahmed
@@ -15,7 +31,6 @@ function Navbar() {
       </div>
 
       <div className="navs flex justify-center items-center">
-
         <ul
           className={`
             ${menuOpen ? 'flex' : 'hidden'}
@@ -27,7 +42,6 @@ function Navbar() {
             p-7
             rounded-xl
             shadow-2xl shadow-black/30
-
             md:static
             md:flex
             md:flex-row
@@ -36,13 +50,11 @@ function Navbar() {
             md:p-0
             md:shadow-none
             md:gap-4
-
             lg:gap-6
             lg:text-[1.05rem]
             md:text-[0.9rem]
           `}
         >
-
           <li className='cursor-pointer transition duration-300'>
             <NavLink
               to="/"
@@ -106,7 +118,6 @@ function Navbar() {
               Contact
             </NavLink>
           </li>
-
         </ul>
 
         <button
@@ -115,12 +126,9 @@ function Navbar() {
         >
           {menuOpen ? <FiX /> : <FiMenu />}
         </button>
-
       </div>
-
     </div>
   )
 }
 
 export default Navbar
-
